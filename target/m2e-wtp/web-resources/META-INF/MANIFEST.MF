@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: Nida
+Build-Jdk: 14.0.2
+Created-By: Maven Integration for Eclipse
+version: 0.0.1-SNAPSHOT
+

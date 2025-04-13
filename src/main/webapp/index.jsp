@@ -6,6 +6,7 @@
 
 <body bgcolor="green">
 <form method="get" action="./CalculatorServlet">
+<h2> Simple Calculator </h2>
 Number 1: <input type="text" name="no1"> <br>
 Number 2: <input type="text" name="no2"> <br>
 <select name ="operation">
@@ -16,7 +17,6 @@ Number 2: <input type="text" name="no2"> <br>
 			</select>
 
 
-<h2>Welcome All</h2>
 <br>
 <input type="submit" value="go"/>
 </form>

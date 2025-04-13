@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-calculator
+  labels:
+    app: java-calculator
+spec:
+  selector:
+    matchLabels:
+      app: java-calculator
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: java-calculator
+        backstage.io/kubernetes-id: java-calculator
+    spec:
+      containers:
+      - name: java-calculator
+        image: madhurimabb/backstagedemo:6  # Make sure this matches your built image
+        ports:
+        - containerPort: 8080  # Must match the port in Dockerfile (EXPOSE 8080)

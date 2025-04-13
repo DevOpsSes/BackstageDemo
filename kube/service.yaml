@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: java-calculator-service
+  namespace: default
+  labels:  
+    app: java-calculator
+    backstage.io/kubernetes-id: java-calculator
+spec:
+  ports:
+  - port: 80       # External port (accessible outside the cluster)
+    protocol: TCP
+    targetPort: 8080  # Must match containerPort in Deployment (8080)
+  selector:
+    app: java-calculator  # Must match Deployment's label
+  type: NodePort

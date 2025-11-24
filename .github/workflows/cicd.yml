@@ -50,6 +50,6 @@ jobs:
         with:
           push: true
           tags: |
-            madhurimabb/backstagedemo:latest
-            madhurimabb/backstagedemo:${{ github.run_number }}
+            username/reponame:imagetag
           context: .
+
